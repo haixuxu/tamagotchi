@@ -1,0 +1,6 @@
+{
+  "TmgIoTmgAction": "{\"_enum\":[\"Name\",\"Age\",\"Feed\",\"Play\",\"Sleep\",\"TmgInfo\"]}",
+  "TmgIoTmgReply": "{\"_enum\":{\"Name\":\"Text\",\"Age\":\"u64\",\"Fed\":\"Null\",\"Entertained\":\"Null\",\"Slept\":\"Null\",\"TmgInfo\":\"{\\\"owner\\\":\\\"GstdCommonPrimitivesActorId\\\",\\\"name\\\":\\\"Text\\\",\\\"dateOfBirth\\\":\\\"u64\\\"}\"}}",
+  "GstdCommonPrimitivesActorId": "[u8;32]",
+  "TmgIoTamagotchi": "{\"name\":\"Text\",\"dateOfBirth\":\"u64\",\"owner\":\"GstdCommonPrimitivesActorId\",\"fed\":\"u64\",\"fedBlock\":\"u64\",\"entertained\":\"u64\",\"entertainedBlock\":\"u64\",\"rested\":\"u64\",\"restedBlock\":\"u64\",\"allowedAccount\":\"Option<GstdCommonPrimitivesActorId>\"}"
+}
