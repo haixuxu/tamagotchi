@@ -1,7 +1,7 @@
 import fs from "fs";
 import { GearKeyring, GearApi, ProgramMetadata } from "@gear-js/api";
 
-import { resolve } from "./utils.js";
+import { resolveOut } from "./utils.js";
 
 const code = fs.readFileSync(resolve("tmg.opt.wasm"));
 const gearApi = await GearApi.create({

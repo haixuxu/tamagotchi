@@ -120,7 +120,8 @@ extern "C" fn handle() {
 #[no_mangle]
 unsafe extern "C" fn init() {
     // ⚠️ TODO: Change the tamagotchi name
-    let name = String::from("Best-Tamagotchi");
+    // let name = String::from("Best-Tamagotchi");
+    let TmgInit { name } = msg::load().expect("Failed to decode Tamagotchi name");
 
     let current_block = exec::block_timestamp();
 

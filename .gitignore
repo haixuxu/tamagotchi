@@ -29,3 +29,4 @@ yarn-error.log*
 .idea
 *.lock
 target
+testgearapi/wallet
