@@ -19,6 +19,7 @@ const somePayload = {
   name: "haixuxu_tmg",
 };
 
+
 try {
   
   const meta = ProgramMetadata.from("0x" + fs.readFileSync(resolveOut("tmgbbk.meta.txt")));

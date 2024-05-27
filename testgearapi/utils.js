@@ -9,11 +9,11 @@ export const __dirname = path.dirname(__filename);
 
 // const keyring = await GearKeyring.fromSuri("//Alice");
 
-const resolveOut = (file) => {
+export const resolveOut = (file) => {
   return path.resolve(__dirname, "../target/wasm32-unknown-unknown/release", file);
 };
 
-const resolve = (file) => {
+export const resolve = (file) => {
   return path.resolve(__dirname, file);
 };
 
@@ -50,4 +50,5 @@ export const getKeyring = async () => {
   const password = await maskInput("enter password:");
   return GearKeyring.fromJson(jsonKeyring, password);
 };
-export { resolveOut, resolve };
+
+export const timeoutPromise= time=>new Promise((resolve)=>setTimeout(()=>resolve(time),time));
